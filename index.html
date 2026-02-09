@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boucherie de Montchoisi — Artisan boucher à Lausanne</title>
+  <meta name="description" content="Boucherie artisanale à Lausanne. Viandes de qualité, savoir-faire traditionnel. Avenue de Montchoisi 51, 1006 Lausanne. Noté 4.9/5.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%238B4513'/><path d='M30 40 Q40 30 50 35 T70 40 L65 60 Q60 70 50 65 T35 60 Z' fill='%23C85A3C'/></svg>">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Boucherie de Montchoisi</a>
+      <div class="nav-menu">
+        <a href="#savoir-faire">Savoir-faire</a>
+        <a href="#produits">Produits</a>
+        <a href="#horaires">Horaires</a>
+        <a href="#contact" class="nav-cta">Nous contacter</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#savoir-faire" onclick="toggleMenu()">Savoir-faire</a>
+    <a href="#produits" onclick="toggleMenu()">Produits</a>
+    <a href="#horaires" onclick="toggleMenu()">Horaires</a>
+    <a href="#contact" onclick="toggleMenu()">Nous contacter</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          <span>4.9/5 — Excellence reconnue</span>
+        </div>
+
+        <h1 class="hero-title">
+          L'art de la viande<br>
+          <span class="hero-accent">depuis des générations</span>
+        </h1>
+
+        <p class="hero-text">
+          Boucherie artisanale au cœur de Lausanne. Sélection rigoureuse,
+          découpe traditionnelle et conseil expert pour sublimer chaque repas.
+        </p>
+
+        <div class="hero-actions">
+          <a href="tel:+41216172827" class="btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            021 617 28 27
+          </a>
+          <a href="#horaires" class="btn-secondary">Voir les horaires</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=800&h=1000&fit=crop&q=80" alt="Viandes de qualité">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Savoir-faire -->
+  <section class="section" id="savoir-faire">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Notre engagement</span>
+        <h2 class="section-title">Savoir-faire traditionnel,<br>exigence moderne</h2>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <i data-lucide="scissors" class="lucide-icon"></i>
+          </div>
+          <h3>Découpe artisanale</h3>
+          <p>Maîtrise traditionnelle de la découpe pour respecter chaque pièce de viande et garantir tendreté et saveur.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <i data-lucide="badge-check" class="lucide-icon"></i>
+          </div>
+          <h3>Sélection rigoureuse</h3>
+          <p>Choix méticuleux de nos fournisseurs et de nos viandes pour une qualité irréprochable à chaque achat.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <i data-lucide="handshake" class="lucide-icon"></i>
+          </div>
+          <h3>Conseil expert</h3>
+          <p>Accompagnement personnalisé pour choisir la pièce idéale et les meilleures techniques de préparation.</p>
+        </div>
+      </div>
+
+      <div class="intro-text">
+        <p class="lead"> et son équipe perpétuent l'excellence d'une boucherie de quartier authentique, où chaque client est accueilli avec attention et professionnalisme.</p>
+        <p>Installée avenue de Montchoisi, notre boucherie est devenue une référence pour les amateurs de viande de qualité à Lausanne. Notre engagement : vous offrir les meilleures viandes avec un service irréprochable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produits -->
+  <section class="section section-dark" id="produits">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label section-label-light">Notre sélection</span>
+        <h2 class="section-title">Des produits d'exception</h2>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=600&h=400&fit=crop&q=80" alt="Bœuf de qualité">
+          </div>
+          <div class="product-content">
+            <h3>Bœuf</h3>
+            <p>Pièces nobles et viandes maturées issues d'élevages sélectionnés. Entrecôtes, filets, côtes de bœuf et viandes à braiser.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=600&h=400&fit=crop&q=80" alt="Veau">
+          </div>
+          <div class="product-content">
+            <h3>Veau</h3>
+            <p>Viande tendre et délicate, parfaite pour vos escalopes, rôtis et blanquettes. Qualité suisse garantie.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1602470520998-f4a52199a3d6?w=600&h=400&fit=crop&q=80" alt="Agneau">
+          </div>
+          <div class="product-content">
+            <h3>Agneau</h3>
+            <p>Gigots, côtelettes et épaules d'agneau de première qualité pour des plats savoureux et raffinés.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1602470520998-f4a52199a3d6?w=600&h=400&fit=crop&q=80" alt="Porc">
+          </div>
+          <div class="product-content">
+            <h3>Porc</h3>
+            <p>Côtes, filets mignons et rôtis de porc issus de porcs élevés dans le respect du bien-être animal.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?w=600&h=400&fit=crop&q=80" alt="Volaille">
+          </div>
+          <div class="product-content">
+            <h3>Volaille</h3>
+            <p>Poulets fermiers, pintades et canards de qualité supérieure pour des repas gourmands et authentiques.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=600&h=400&fit=crop&q=80" alt="Charcuterie">
+          </div>
+          <div class="product-content">
+            <h3>Charcuterie</h3>
+            <p>Large choix de charcuterie fine et produits traiteur pour accompagner vos apéritifs et repas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <p>Une demande spéciale ? Nous pouvons commander des pièces sur demande.</p>
+        <a href="tel:+41216172827" class="btn-light">Nous appeler</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Horaires -->
+  <section class="section" id="horaires">
+    <div class="container">
+      <div class="horaires-layout">
+        <div class="horaires-content">
+          <span class="section-label">Horaires d'ouverture</span>
+          <h2 class="section-title">Venez nous rendre visite</h2>
+          <p class="horaires-intro">Notre boucherie vous accueille toute la semaine avec des horaires adaptés à votre emploi du temps.</p>
+
+          <div class="horaires-grid">
+            <div class="horaire-item">
+              <div class="horaire-day">Lundi</div>
+              <div class="horaire-times">7h30—12h30 · 15h00—19h00</div>
+            </div>
+            <div class="horaire-item">
+              <div class="horaire-day">Mardi</div>
+              <div class="horaire-times">7h30—12h30 · 15h00—19h00</div>
+            </div>
+            <div class="horaire-item">
+              <div class="horaire-day">Mercredi</div>
+              <div class="horaire-times">7h30—12h30 · 15h00—19h00</div>
+            </div>
+            <div class="horaire-item">
+              <div class="horaire-day">Jeudi</div>
+              <div class="horaire-times">7h30—12h30</div>
+            </div>
+            <div class="horaire-item">
+              <div class="horaire-day">Vendredi</div>
+              <div class="horaire-times">7h30—12h30 · 15h00—19h00</div>
+            </div>
+            <div class="horaire-item">
+              <div class="horaire-day">Samedi</div>
+              <div class="horaire-times">7h30—14h00</div>
+            </div>
+            <div class="horaire-item horaire-closed">
+              <div class="horaire-day">Dimanche</div>
+              <div class="horaire-times">Fermé</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="horaires-info">
+          <div class="info-card">
+            <h3>Commande spéciale ?</h3>
+            <p>Pour les grandes occasions, les fêtes ou des pièces particulières, n'hésitez pas à nous appeler à l'avance. Nous serons ravis de préparer votre commande.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Conseil personnalisé</h3>
+            <p>Besoin d'aide pour choisir ? Notre équipe est là pour vous conseiller sur les meilleures cuissons et préparations selon vos envies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Nous trouver</h2>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="contact-content">
+                <div class="contact-label">Adresse</div>
+                <div class="contact-value">
+                  Avenue de Montchoisi 51<br>
+                  1006 Lausanne
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="contact-content">
+                <div class="contact-label">Téléphone</div>
+                <a href="tel:+41216172827" class="contact-value contact-link">021 617 28 27</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div class="contact-content">
+                <div class="contact-label">Ouvert</div>
+                <div class="contact-value">Lu, Ma, Me, Ve · 7h30—19h00</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rating-box">
+            <div class="rating-stars">★★★★★</div>
+            <div class="rating-text">4.9/5 basé sur les avis clients</div>
+          </div>
+        </div>
+
+        <div class="map-placeholder">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2745.2836542753896!2d6.639826!3d46.519167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c2e35c8f8c001%3A0x1234567890abcdef!2sAvenue%20de%20Montchoisi%2051%2C%201006%20Lausanne!5e0!3m2!1sfr!2sch!4v1234567890123"
+            width="100%"
+            height="100%"
+            style="border:0; border-radius: 12px;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Boucherie de Montchoisi</h3>
+        <p>Artisan boucher depuis plusieurs générations</p>
+      </div>
+
+      <div class="footer-info">
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="#savoir-faire">Savoir-faire</a>
+          <a href="#produits">Produits</a>
+          <a href="#horaires">Horaires</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>Avenue de Montchoisi 51<br>1006 Lausanne</p>
+          <a href="tel:+41216172827">021 617 28 27</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Horaires</h4>
+          <p>Lu, Ma, Me, Ve<br>7h30—12h30 · 15h—19h</p>
+          <p>Samedi<br>7h30—14h00</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <p>&copy; 2025 Boucherie de Montchoisi — </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navigation scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    function toggleMenu() {
+      document.getElementById('menuToggle').classList.toggle('active');
+      document.getElementById('mobileMenu').classList.toggle('active');
+      document.body.style.overflow = document.getElementById('mobileMenu').classList.contains('active') ? 'hidden' : '';
+    }
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (document.getElementById('mobileMenu').classList.contains('active')) {
+            toggleMenu();
+          }
+        }
+      });
+    });
+
+    // Scroll reveal animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -80px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.value-card, .product-card, .horaire-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>
